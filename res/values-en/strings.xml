@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">輸入控制</string>
+    <string name="hello_world">哈囉世界!</string>
+    <string name="menu_settings">設定</string>
+    <string name="btn_text">Button</string>
+    <string name="text_input">Text Input</string>
+    <string name="checkbox_text">Check Box</string>
+    <string name="radio_text">Yooooooo</string>
+    <string name="toggle_text">CLOse</string>
+    <string name="spinner_text">THREEEEEEE</string>
+
+</resources>

@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
     android:orientation="vertical" >
 
     <TextView
@@ -34,5 +35,113 @@
             android:contentDescription="@string/btn_text" />
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/text_input" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="請輸入文字"
+        android:inputType="number"
+        android:imeOptions="actionSearch"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox_text" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_toRightOf="@+id/checkBox1"
+            android:checked="true"
+            android:text="蛆吱別怨"
+            android:onClick="onCheckBoxClicked" />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="onCheckBoxClicked"
+            android:text="大愚弱智" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/radio_text" />
+
+	<RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        	
+	    <RadioButton
+	        android:id="@+id/radioBtn1"
+	       	android:layout_width="fill_parent"
+         	android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:onClick="onRadioButtonClicked"
+	        android:text="(worship)" />
+
+	    <RadioButton
+	        android:id="@+id/radioBtn2"
+	        android:layout_width="fill_parent"
+            android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:onClick="onRadioButtonClicked"
+	        android:text="(yay)" />
+	
+	</RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/toggle_text" />
+
+    <ToggleButton
+        android:id="@+id/toggleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="ㄎㄎ"
+        android:textOff="ㄏㄏ"
+        android:checked="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/spinner_text" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

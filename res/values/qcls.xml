@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="qcls_array">
+        <item>QC.L</item>
+        <item>qcl</item>
+        <item>qc1</item>
+        <item>gc1</item>
+    </string-array>
+</resources>
